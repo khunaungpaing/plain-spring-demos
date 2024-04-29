@@ -1,0 +1,15 @@
+version: '3.8'  # Adjust if needed based on your Docker Compose version
+
+services:
+  db:
+    image: mysql:8.0  # Specify MySQL version 8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root  # Replace with a strong password
+      MYSQL_DATABASE: security-demo  # Optional: Name of the initial database
+    ports:
+      - '3306:3306'  # Map container port 3306 to host port 3306
+    volumes:
+      - mysql-data:/var/lib/mysql  # Persistent storage for data
+
+volumes:
+  mysql-data: {}  # O
