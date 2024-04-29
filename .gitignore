@@ -1,0 +1,7 @@
+
+# Ignore the Server folder
+Server/
+
+# Ignore the .metadata folder
+.metadata/
+
