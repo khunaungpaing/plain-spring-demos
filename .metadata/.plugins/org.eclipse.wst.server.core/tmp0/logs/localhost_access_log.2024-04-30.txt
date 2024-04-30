@@ -40,3 +40,8 @@
 0:0:0:0:0:0:0:1 - - [30/Apr/2024:02:57:05 +0630] "GET /plain-spring-security-demo/login HTTP/1.1" 200 556
 0:0:0:0:0:0:0:1 - - [30/Apr/2024:02:57:08 +0630] "GET /plain-spring-security-demo/login HTTP/1.1" 200 556
 0:0:0:0:0:0:0:1 - - [30/Apr/2024:02:57:12 +0630] "POST /plain-spring-security-demo/login HTTP/1.1" 403 649
+127.0.0.1 - - [30/Apr/2024:19:11:16 +0630] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [30/Apr/2024:19:11:18 +0630] "GET /plain-spring-security-demo/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Apr/2024:19:11:18 +0630] "GET /plain-spring-security-demo/login HTTP/1.1" 200 556
+0:0:0:0:0:0:0:1 - - [30/Apr/2024:19:11:19 +0630] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [30/Apr/2024:19:11:28 +0630] "POST /plain-spring-security-demo/login HTTP/1.1" 403 649
