@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+/home/khunaungpaing/eclipse-project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-274939941.index
-833500758.index
-25275373.index
-2323174047.index
-3668250256.index
-4262092373.index
-1683677895.index
