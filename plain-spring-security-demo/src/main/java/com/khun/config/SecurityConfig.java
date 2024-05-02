@@ -27,16 +27,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
             .dataSource(dataSource)
-            .usersByUsernameQuery("SELECT username, password, active FROM users WHERE username=?")
-            .authoritiesByUsernameQuery("SELECT username, role FROM users WHERE username=?")
+            .usersByUsernameQuery("SELECT username, password, enabled FROM users WHERE username=?")
+            .authoritiesByUsernameQuery("SELECT username, role FROM authorities WHERE username=?")
             .passwordEncoder(passwordEncoder());
     }
+
+
     
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+        	.csrf().disable()
+        	.httpBasic().disable()
             .authorizeRequests()
-            	.antMatchers("/login", "/logout", "/public/**", "/css/**", "/js/**", "/images/**").permitAll()
+            	.antMatchers("/login", "/logout", "/public/**", "/css/**", "/js/**", "/images/**","/test").permitAll()
 	            .anyRequest().authenticated()  // All other requests require authentication
             .and()
             .formLogin()

@@ -1,6 +1,8 @@
 package com.khun.controller;
 
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -13,15 +15,11 @@ public class HomeController {
 		return "login";
 	}
 
-	@PostMapping("/login")
-    public String loginProcessing() {
-        // No need to implement any logic here, Spring Security handles authentication
-        // This method is just for handling the form submission
-        return "redirect:/"; // Redirect to the home page after successful login
-    }
 	
 	@GetMapping("/")
-	public String home() {
+	public String home(Model model) {
+		String username = SecurityContextHolder.getContext().getAuthentication().getName();
+		model.addAttribute("username",username);
 		return "home";
 	}
 }
