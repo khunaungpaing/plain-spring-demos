@@ -10,7 +10,7 @@ The purpose of this repository is to offer beginners a comprehensive set of exam
 
 Currently, the repository includes the following demo projects:
 
-- **Spring Security Demo:** This demo project showcases how to integrate Spring Security into a plain Spring application, demonstrating authentication, authorization, and basic security configurations.
+- **[Spring Security Demo:](https://github.com/khunaungpaing/plain-spring-demos/tree/main/plain-spring-security-demo)** This demo project showcases how to integrate Spring Security into a plain Spring application, demonstrating authentication, authorization, and basic security configurations.
 
 
 ## Usage
