@@ -47,7 +47,17 @@ public PasswordEncoder passwordEncoder() {
     return new BCryptPasswordEncoder(); // default rounds - 10
 }
 ```
-
+# JdbcAuthentication
+```java
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.jdbcAuthentication()
+            .dataSource(dataSource)
+            .usersByUsernameQuery("SELECT username, password, enabled FROM users WHERE username=?")
+            .authoritiesByUsernameQuery("SELECT username, role FROM authorities WHERE username=?")
+            .passwordEncoder(passwordEncoder());
+    }
+```
 # Authentication and Authorization
 Configure authentication and authorization:
 ```java
