@@ -5,3 +5,6 @@ Server/
 # Ignore the .metadata folder
 .metadata/
 
+/build/classes/
+
+*.class
