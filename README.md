@@ -4,7 +4,7 @@ Welcome to the Plain Spring Demos repository! This collection of demo projects a
 
 ## Purpose
 
-The purpose of this repository is to offer beginners a comprehensive set of examples and reference materials for learning Spring Framework 5.3.x without Spring Boot. While there are numerous resources available for Spring Boot, the resources for plain Spring are relatively scarce. These demo projects aim to bridge that gap and provide a valuable resource for those who prefer to work with plain Spring.
+The purpose of this repository is to offer beginners a comprehensive set of examples and reference materials for learning Spring Framework without Spring Boot. While there are numerous resources available for Spring Boot, the resources for plain Spring are relatively scarce. These demo projects aim to bridge that gap and provide a valuable resource for those who prefer to work with plain Spring.
 
 ## Demo Projects
 
